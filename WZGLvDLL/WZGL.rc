@@ -1,0 +1,499 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WZGL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\AvP PH2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 195, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 本软件"
+FONT 12, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,21,20,20,20
+    LTEXT           "地图管理软件 1.0 版",IDC_STATIC,57,18,80,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010-02-15",IDC_STATIC,49,42,96,8
+    DEFPUSHBUTTON   "确定",IDOK,72,84,50,14,WS_GROUP
+    CTEXT           "本软件后台使用拥有自主知识产权的数据库系统PalantirBase",
+                    IDC_STATIC,18,61,159,16
+END
+
+IDD_WZGL_DIALOG DIALOGEX 0, 0, 415, 253
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "地图管理"
+MENU IDR_MENU_WZGL
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_USERIN DIALOG DISCARDABLE  0, 0, 191, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户数据输入"
+FONT 10, "System"
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,14,15,40,10
+    LTEXT           "用户密码：",IDC_STATIC,14,36,40,10
+    LTEXT           "用户权限：",IDC_STATIC,14,57,40,10
+    EDITTEXT        IDC_EDIT_UNAME,66,14,109,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_URIGHT,66,52,110,31,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_UPASSW,66,33,109,15,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUT_ADDUSER,29,84,53,15
+    PUSHBUTTON      "返回",IDC_BUT_CANCEL,99,83,53,15
+END
+
+IDD_DLG_LOGON DIALOG DISCARDABLE  0, 0, 176, 94
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "地图管理登陆"
+FONT 10, "System"
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,23,20,42,12
+    LTEXT           "密码：",IDC_STATIC,23,42,42,12
+    EDITTEXT        IDC_EDIT_NAME,65,19,76,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSW,65,40,76,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登陆",IDC_BUT_LOGIN,27,63,42,13
+    PUSHBUTTON      "退出",IDC_BUTTON2,82,63,42,13
+END
+
+IDD_DLG_USERFIND DIALOGEX 0, 0, 253, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户查询"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "显示用户列表",IDOK,24,131,50,14
+    PUSHBUTTON      "返  回",IDCANCEL,88,131,48,14
+    CONTROL         "List1",IDC_LIST_USERFIND,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,163,113,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "删除选定用户",IDC_BUT_DELETEUSER,181,38,52,14
+    CTEXT           "请选中记录项后，再进行删除操作。",IDC_STATIC,183,67,49,
+                    36
+END
+
+IDD_DLG_UPDATEPASSW DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改当前用户的密码"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,23,79,50,14
+    PUSHBUTTON      "取消",IDCANCEL,96,79,50,14
+    EDITTEXT        IDC_EDIT_OLD,66,13,101,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW,66,33,101,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW_CONFIRM,66,53,101,14,ES_AUTOHSCROLL
+    LTEXT           "当前密码：",IDC_STATIC,7,15,42,12
+    LTEXT           "新密码：",IDC_STATIC,7,35,39,12
+    LTEXT           "确认新密码：",IDC_STATIC,7,55,54,12
+END
+
+IDD_DLG_GOODSIN DIALOGEX 0, 0, 446, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加地图"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,144,156,50,14
+    PUSHBUTTON      "返回",IDCANCEL,252,155,50,14
+    LTEXT           "地图代码：",IDC_STATIC,10,13,42,13
+    LTEXT           "地图名称：",IDC_STATIC,10,46,42,13
+    LTEXT           "地图编制数：",IDC_STATIC,10,64,48,13
+    LTEXT           "地图现有数：",IDC_STATIC,10,82,48,13
+    LTEXT           "地图出库数：",IDC_STATIC,10,100,48,13
+    LTEXT           "地图图幅号：",IDC_STATIC,10,118,48,13
+    LTEXT           "年版：",IDC_STATIC,10,136,40,13
+    LTEXT           "比例尺：",IDC_STATIC,235,15,32,13
+    LTEXT           "入库时间：",IDC_STATIC,234,34,42,13
+    LTEXT           "出库时间：",IDC_STATIC,234,52,41,13
+    LTEXT           "使用单位：",IDC_STATIC,234,70,42,13
+    LTEXT           "存放位置：",IDC_STATIC,234,89,42,13
+    EDITTEXT        IDC_EDIT_GOODSCODE,57,11,88,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_GOODSNAME,57,44,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOTALNUM,57,62,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_REMAINNUM,57,80,88,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_OUTNUM,57,98,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_PICCODE,57,116,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YEARVER,57,134,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SCALE,285,13,81,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_INTIME,278,32,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTTIME,278,50,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USEDEP,278,68,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCRIPT,277,105,88,44,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,147,46,66,11
+    LTEXT           "请输入大于等于0的数.",IDC_STATIC,147,99,78,11
+    LTEXT           "请输入大于等于0的数.",IDC_STATIC,147,63,78,11
+    LTEXT           "请输入大于等于0的数.",IDC_STATIC,147,81,78,11
+    LTEXT           "请输入4位数年份.例：2010",IDC_STATIC,147,135,97,11
+    LTEXT           "例：1:2000.",IDC_STATIC,373,13,53,11
+    LTEXT           "例：19900605",IDC_STATIC,372,34,56,11
+    LTEXT           "例：19900605",IDC_STATIC,372,51,55,11
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,372,68,67,11
+    LTEXT           "请输入0-3000个字符.",IDC_STATIC,371,106,54,24
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,148,116,66,11
+    LTEXT           "1:",IDC_STATIC,277,15,8,13,0,WS_EX_TRANSPARENT
+    LTEXT           "备注：",IDC_STATIC,249,108,25,13
+    EDITTEXT        IDC_EDIT_LOCATION1,277,87,55,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_LOCATION2,347,87,54,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "箱",IDC_STATIC,334,89,10,8
+    LTEXT           "层",IDC_STATIC,404,89,10,10
+    LTEXT           "地图编号：",IDC_STATIC,10,29,42,13
+    EDITTEXT        IDC_EDIT_GOODSSERIAL,57,27,88,13,ES_AUTOHSCROLL
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,147,29,66,11
+END
+
+IDD_DLG_GOODSFIND DIALOG DISCARDABLE  0, 0, 409, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询地图"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "显示地图信息",IDOK,84,188,50,14
+    PUSHBUTTON      "返  回",IDCANCEL,145,188,50,14
+    CONTROL         "List1",IDC_LIST_GOODS,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,395,138
+    PUSHBUTTON      "删  除",ID_BUT_DELETEGOODS,209,188,50,14
+    PUSHBUTTON      "更  改",ID_BUT_UPDATEGOODS,274,188,50,14
+    GROUPBOX        "查询条件",IDC_STATIC,7,149,395,36
+    LTEXT           "请选择查询字段：",IDC_STATIC,11,163,65,12
+    LTEXT           "请选择查询条件：",IDC_STATIC,134,163,65,12
+    COMBOBOX        IDC_COMBO_OP,195,163,28,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "请输入匹配字符：",IDC_STATIC,224,163,65,12
+    EDITTEXT        IDC_EDIT_FILTER,287,163,109,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_COL,73,163,59,64,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITRECCOUNT,7,188,47,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "条数据",IDC_STATIC,57,190,27,12
+END
+
+IDD_DLG_GOODSUPDATE DIALOGEX 0, 0, 441, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更新地图信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "提 交 更 改",IDOK,145,153,50,14
+    PUSHBUTTON      "返  回",IDCANCEL,246,153,50,14
+    LTEXT           "地图代码：",IDC_STATIC,8,11,42,13
+    LTEXT           "地图名称：",IDC_STATIC,8,44,42,13
+    LTEXT           "地图编制数：",IDC_STATIC,8,62,48,13
+    LTEXT           "地图现有数：",IDC_STATIC,8,80,48,13
+    LTEXT           "地图出库数：",IDC_STATIC,8,98,48,13
+    LTEXT           "地图图幅号：",IDC_STATIC,8,116,48,13
+    LTEXT           "年版：",IDC_STATIC,8,134,40,13
+    LTEXT           "比例尺：",IDC_STATIC,233,13,32,13
+    LTEXT           "入库时间：",IDC_STATIC,232,32,42,13
+    LTEXT           "出库时间：",IDC_STATIC,232,50,41,13
+    LTEXT           "使用单位：",IDC_STATIC,232,68,42,13
+    LTEXT           "存放位置：",IDC_STATIC,232,87,42,13
+    EDITTEXT        IDC_EDIT_GOODSCODE,55,9,88,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_GOODSNAME,55,42,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOTALNUM,55,60,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_REMAINNUM,55,78,88,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_OUTNUM,55,96,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_PICCODE,55,114,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YEARVER,55,132,88,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SCALE,283,11,81,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_INTIME,276,30,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTTIME,276,48,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USEDEP,276,66,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCRIPT,275,103,88,44,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,145,44,66,11
+    LTEXT           "请输入大于等于0的数.",IDC_STATIC,145,97,78,11
+    LTEXT           "请输入大于等于0的数.",IDC_STATIC,145,61,78,11
+    LTEXT           "请输入大于等于0的数.",IDC_STATIC,145,79,78,11
+    LTEXT           "请输入4位数年份.例：2010",IDC_STATIC,145,133,97,11
+    LTEXT           "例：1:2000.",IDC_STATIC,371,11,53,11
+    LTEXT           "例：19900605",IDC_STATIC,370,32,56,11
+    LTEXT           "例：19900605",IDC_STATIC,370,49,55,11
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,370,66,67,11
+    LTEXT           "请输入0-3000个字符.",IDC_STATIC,369,104,54,24
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,146,114,66,11
+    LTEXT           "1:",IDC_STATIC,275,13,8,13,0,WS_EX_TRANSPARENT
+    LTEXT           "备注：",IDC_STATIC,247,106,25,13
+    EDITTEXT        IDC_EDIT_LOCATION1,275,85,55,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_LOCATION2,345,85,54,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "箱",IDC_STATIC,332,87,10,8
+    LTEXT           "层",IDC_STATIC,402,87,10,10
+    LTEXT           "地图编号：",IDC_STATIC,8,27,42,13
+    EDITTEXT        IDC_EDIT_GOODSSERIAL,55,25,88,13,ES_AUTOHSCROLL
+    LTEXT           "请输入1-30个字符.",IDC_STATIC,145,27,66,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "新疆军区炮兵旅 PBU，地图管理系统软件\0"
+            VALUE "CompanyName", "新疆军区炮兵旅 PBU\0"
+            VALUE "FileDescription", "地图管理系统软件\0"
+            VALUE "FileVersion", "2010年2月18日：1.0版本\0"
+            VALUE "InternalName", "WZGL\0"
+            VALUE "LegalCopyright", "版权所有 (C)\0"
+            VALUE "LegalTrademarks", "Palantir\0"
+            VALUE "OriginalFilename", "WZGL.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "地图管理系统软件\0"
+            VALUE "ProductVersion", "1.0版本\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_WZGL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_DLG_USERIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DLG_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DLG_USERFIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DLG_UPDATEPASSW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DLG_GOODSIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DLG_GOODSFIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DLG_GOODSUPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_WZGL MENU DISCARDABLE 
+BEGIN
+    POPUP "用户表操作"
+    BEGIN
+        MENUITEM "添加用户",                    ID_MENU_USER_IN
+        MENUITEM "查找用户",                    ID_MENU_USER_FIND
+    END
+    POPUP "地图表操作"
+    BEGIN
+        MENUITEM "信息录入",                    ID_MENU_GOODS_IN
+        MENUITEM "信息查询",                    ID_MENU_GOODSFIND
+    END
+    POPUP "系统操作"
+    BEGIN
+        MENUITEM "初始化数据库",                ID_MENU_SYS_INIT
+        MENUITEM SEPARATOR
+        MENUITEM "重新登陆",                    ID_MENU_RELOGIN
+        MENUITEM "修改密码",                    ID_MENU_UPDATEPASSW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WZGL(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM32774        "慎用"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WZGL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
