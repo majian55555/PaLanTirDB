@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: newPage - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\MaJian\LOCALS~1\Temp\RSP4B8.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/newPage.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyVc++Project\U_Base\newPage\error.cpp"
+"D:\MyVc++Project\U_Base\newPage\newBuf.cpp"
+"D:\MyVc++Project\U_Base\newPage\newIO.cpp"
+"D:\MyVc++Project\U_Base\newPage\newPage.cpp"
+"D:\MyVc++Project\U_Base\newPage\testNewPage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\MaJian\LOCALS~1\Temp\RSP4B8.tmp" 
+Creating temporary file "C:\DOCUME~1\MaJian\LOCALS~1\Temp\RSP4B9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/newPage.pdb" /debug /machine:I386 /out:"Debug/newPage.exe" /pdbtype:sept 
+".\Debug\error.obj"
+".\Debug\newBuf.obj"
+".\Debug\newIO.obj"
+".\Debug\newPage.obj"
+".\Debug\testNewPage.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\MaJian\LOCALS~1\Temp\RSP4B9.tmp"
+<h3>Output Window</h3>
+Compiling...
+error.cpp
+newBuf.cpp
+newIO.cpp
+newPage.cpp
+testNewPage.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+newPage.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
