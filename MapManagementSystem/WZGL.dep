@@ -1,0 +1,138 @@
+# Microsoft Developer Studio Generated Dependency File, included by WZGL.mak
+
+.\Dlg_User_Find.cpp : \
+	".\Dlg_User_Find.h"\
+	".\error.h"\
+	".\GirdList.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	
+
+.\DlgGoodsFind.cpp : \
+	".\DlgGoodsFind.h"\
+	".\error.h"\
+	".\GirdList.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	
+
+.\DlgGoodsIn.cpp : \
+	".\DlgGoodsIn.h"\
+	".\error.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	
+
+.\DlgLog.cpp : \
+	".\DlgLog.h"\
+	".\error.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	".\WZGLDlg.h"\
+	
+
+.\DLGUpDatePassw.cpp : \
+	".\DLGUpDatePassw.h"\
+	".\error.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	".\WZGLDlg.h"\
+	
+
+.\DlgUserInsert.cpp : \
+	".\DlgUserInsert.h"\
+	".\error.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	
+
+.\error.cpp : \
+	".\error.h"\
+	".\WZGL.h"\
+	
+
+.\GirdList.cpp : \
+	".\GirdList.h"\
+	".\WZGL.h"\
+	
+
+.\newBuf.cpp : \
+	".\error.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\WZGL.h"\
+	
+
+.\newIO.cpp : \
+	".\error.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\WZGL.h"\
+	
+
+.\newPage.cpp : \
+	".\error.h"\
+	".\newPage.h"\
+	".\WZGL.h"\
+	
+
+.\RelManager.cpp : \
+	".\error.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\WZGL.cpp : \
+	".\WZGL.h"\
+	".\WZGLDlg.h"\
+	
+
+.\WZGL.rc : \
+	".\res\AvP PH2.ico"\
+	".\res\WZGL.ico"\
+	".\res\WZGL.rc2"\
+	
+
+.\WZGLDlg.cpp : \
+	".\Dlg_User_Find.h"\
+	".\DlgGoodsFind.h"\
+	".\DlgGoodsIn.h"\
+	".\DlgLog.h"\
+	".\DLGUpDatePassw.h"\
+	".\DlgUserInsert.h"\
+	".\error.h"\
+	".\GirdList.h"\
+	".\newBuf.h"\
+	".\newIO.h"\
+	".\newPage.h"\
+	".\RelManager.h"\
+	".\WZGL.h"\
+	".\WZGLDlg.h"\
+	
